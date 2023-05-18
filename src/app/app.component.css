@@ -11,17 +11,41 @@ img {
 }
 
 .content {
-  padding: 0.45rem 1.562rem 1.562rem;
+  padding: 1.2rem 1.562rem 1.562rem;
+}
+
+h1 {
+  margin-bottom: 1.2rem;
 }
 
 .perfume {
+  display: block;
   font-size: 0.7rem;
   font-weight: 500;
   letter-spacing: 5.5px;
+  margin-bottom: 0.9rem;
   text-transform: uppercase;
 }
 
 .name {
   color: var(--color-neutral-very-dark-blue);
-  display: block;
+  font-family: var(--font-fraunces);
+  font-size: 1.95rem;
+  line-height: 0.9;
+}
+
+p {
+  line-height: 1.6;
+  margin-bottom: 1.35rem;
+}
+
+.prices {
+  align-items: center;
+  display: flex;
+}
+
+.real-price {
+  color: var(--color-primary-dark-cyan);
+  font-family: var(--font-fraunces);
+  font-size: 2rem;
 }
