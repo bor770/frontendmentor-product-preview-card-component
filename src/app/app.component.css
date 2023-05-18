@@ -1,0 +1,10 @@
+:host {
+  border-radius: 5px;
+  height: 38.125rem;
+  overflow: hidden;
+  width: 92vw;
+}
+
+img {
+  height: 15rem;
+}
