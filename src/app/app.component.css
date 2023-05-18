@@ -1,10 +1,27 @@
 :host {
-  border-radius: 5px;
+  background-color: var(--color-neutral-white);
+  border-radius: 10px;
   height: 38.125rem;
   overflow: hidden;
   width: 92vw;
 }
 
 img {
-  height: 15rem;
+  width: 100%;
+}
+
+.content {
+  padding: 0.45rem 1.562rem 1.562rem;
+}
+
+.perfume {
+  font-size: 0.7rem;
+  font-weight: 500;
+  letter-spacing: 5.5px;
+  text-transform: uppercase;
+}
+
+.name {
+  color: var(--color-neutral-very-dark-blue);
+  display: block;
 }

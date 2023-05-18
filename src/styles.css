@@ -23,6 +23,7 @@ body {
 body {
   align-items: center;
   background-color: var(--color-primary-cream);
+  color: var(--color-neutral-dark-grayish-blue);
   display: flex;
   font-family: "Montserrat", Roboto, "Helvetica Neue", sans-serif;
   justify-content: center;
