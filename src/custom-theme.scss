@@ -1,7 +1,6 @@
-
 // Custom Theming for Angular Material
 // For more information: https://material.angular.io/guide/theming
-@use '@angular/material' as mat;
+@use "@angular/material" as mat;
 // Plus imports for other components in your app.
 
 // Include the common styles for Angular Material. We include this here so that you only
@@ -12,24 +11,74 @@
 // Define the palettes for your theme using the Material Design palettes available in palette.scss
 // (imported above). For each palette, you can optionally specify a default, lighter, and darker
 // hue. Available color palettes: https://material.io/design/color/
-$product-preview-card-component-primary: mat.define-palette(mat.$indigo-palette);
-$product-preview-card-component-accent: mat.define-palette(mat.$pink-palette, A200, A100, A400);
+// $product-preview-card-component-primary: mat.define-palette(
+//   mat.$indigo-palette
+// );
+// $product-preview-card-component-accent: mat.define-palette(
+//   mat.$pink-palette,
+//   A200,
+//   A100,
+//   A400
+// );
 
 // The warn palette is optional (defaults to red).
-$product-preview-card-component-warn: mat.define-palette(mat.$red-palette);
+// $product-preview-card-component-warn: mat.define-palette(mat.$red-palette);
 
 // Create the theme object. A theme consists of configurations for individual
 // theming systems such as "color" or "typography".
-$product-preview-card-component-theme: mat.define-light-theme((
-  color: (
-    primary: $product-preview-card-component-primary,
-    accent: $product-preview-card-component-accent,
-    warn: $product-preview-card-component-warn,
-  )
-));
+// $product-preview-card-component-theme: mat.define-light-theme(
+//   (
+//     color: (
+//       primary: $product-preview-card-component-primary,
+//       accent: $product-preview-card-component-accent,
+//       warn: $product-preview-card-component-warn,
+//     ),
+//   )
+// );
 
 // Include theme styles for core and each component used in your app.
 // Alternatively, you can import and @include the theme mixins for each component
 // that you are using.
-@include mat.all-component-themes($product-preview-card-component-theme);
+// @include mat.all-component-themes($product-preview-card-component-theme);
 
+$dark-cyan-palette: (
+  50: #e3f3ef,
+  100: #bbe2d7,
+  200: #92d0be,
+  300: #6cbca5,
+  400: #55ad93,
+  500: #489e82,
+  600: #439076,
+  700: #3c8067,
+  800: #35705a,
+  900: #2a5340,
+  contrast: (
+    50: black,
+    100: black,
+    200: black,
+    300: black,
+    400: black,
+    500: black,
+    600: black,
+    700: white,
+    800: white,
+    900: white,
+  ),
+);
+
+$dark-cyan-primary: mat.define-palette($dark-cyan-palette, 700);
+
+$dark-cyan-theme: mat.define-light-theme(
+  (
+    color: (
+      primary: $dark-cyan-primary,
+      accent: $dark-cyan-primary,
+    ),
+  )
+);
+
+@include mat.core-theme($dark-cyan-theme);
+@include mat.button-theme($dark-cyan-theme);
+@include mat.icon-theme($dark-cyan-theme);
+
+// @include mat.all-component-themes($dark-cyan-theme);

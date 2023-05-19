@@ -42,10 +42,17 @@ p {
 .prices {
   align-items: center;
   display: flex;
+  justify-content: space-between;
+  width: 12.1rem;
 }
 
 .real-price {
   color: var(--color-primary-dark-cyan);
   font-family: var(--font-fraunces);
   font-size: 2rem;
+}
+
+.struck-price {
+  font-size: 0.8rem;
+  text-decoration-line: line-through;
 }
