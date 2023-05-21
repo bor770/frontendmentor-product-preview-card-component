@@ -78,7 +78,7 @@ $dark-cyan-theme: mat.define-light-theme(
 );
 
 @include mat.core-theme($dark-cyan-theme);
-@include mat.button-theme($dark-cyan-theme);
-@include mat.icon-theme($dark-cyan-theme);
+@include mat.button-color($dark-cyan-theme);
+@include mat.icon-color($dark-cyan-theme);
 
 // @include mat.all-component-themes($dark-cyan-theme);

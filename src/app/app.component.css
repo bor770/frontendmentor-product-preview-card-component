@@ -1,12 +1,14 @@
 :host {
   background-color: var(--color-neutral-white);
   border-radius: 10px;
-  height: 38.125rem;
+  height: 38.437rem;
   overflow: hidden;
   width: 92vw;
 }
 
 img {
+  height: 15rem;
+  object-fit: cover;
   width: 100%;
 }
 
@@ -43,6 +45,7 @@ p {
   align-items: center;
   display: flex;
   justify-content: space-between;
+  margin-bottom: 1rem;
   width: 12.1rem;
 }
 
@@ -55,4 +58,17 @@ p {
 .struck-price {
   font-size: 0.8rem;
   text-decoration-line: line-through;
+}
+
+.button-container {
+  align-items: center;
+  display: flex;
+  height: 3.125rem;
+  justify-content: center;
+}
+
+.button {
+  border-radius: 5px;
+  font: inherit;
+  font-weight: 700;
 }
