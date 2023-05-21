@@ -72,3 +72,54 @@ p {
   font: inherit;
   font-weight: 700;
 }
+
+@media (min-width: 90rem) {
+  :host {
+    height: 28.125rem;
+    width: 41.944vw;
+  }
+
+  main {
+    height: 100%;
+  }
+
+  article {
+    display: flex;
+    height: 100%;
+  }
+
+  picture {
+    flex: 0 0 50%;
+    height: 100%;
+  }
+
+  img {
+    height: 100%;
+  }
+
+  .content {
+    flex: 0 0 50%;
+    padding: 2rem;
+  }
+
+  h1 {
+    margin-bottom: 1.65rem;
+  }
+
+  .perfume {
+    margin-bottom: 1.45rem;
+  }
+
+  .name {
+    line-height: 0.95;
+  }
+
+  p {
+    line-height: 1.65;
+    margin-bottom: 1.55rem;
+  }
+
+  .prices {
+    margin-bottom: 1.5rem;
+  }
+}
