@@ -129,6 +129,16 @@
               "src/**/*.html"
             ]
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "prerender": false,
+            "ssr": false,
+            "browserTarget": "product-preview-card-component:build:production",
+            "firebaseProject": "frontendmentor-product-preview",
+            "firebaseHostingSite": "frontendmentor-product-preview"
+          }
         }
       }
     }

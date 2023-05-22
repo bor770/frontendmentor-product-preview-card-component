@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "frontendmentor-product-preview": {
+      "hosting": {
+        "product-preview-card-component": [
+          "frontendmentor-product-preview"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "frontendmentor-product-preview"
+  }
+}
